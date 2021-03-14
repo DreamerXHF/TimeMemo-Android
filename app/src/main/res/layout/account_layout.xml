@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:padding="10dp"
+           android:background="@color/colorPrimary">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/touxiangIm"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:src="@drawable/ic_student"
+               android:layout_centerInParent="true"/>
+           <TextView
+               android:id="@+id/signatureTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:textColor="#FFF"
+               android:textSize="15sp"
+               />
+
+           <TextView
+               android:id="@+id/usernameTv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_above="@id/signatureTv"
+               android:textColor="#FFF"
+               android:textSize="15sp"
+               />
+
+       </RelativeLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="22sp"
+           android:text="我的"
+           />
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="6dp"
+           android:layout_margin="5dp"
+           android:elevation="15dp">
+
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:divider="@drawable/table_divide"
+               android:showDividers="middle|end">
+
+               <TableRow
+                   android:id="@+id/accountItem"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+
+                       android:src="@drawable/ic_wode"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"/>
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:text="账号"
+                       android:textColor="@color/black"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"/>
+
+               </TableRow>
+
+               <TableRow
+                   android:id="@+id/historyItem"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_timeline" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:text="历史时间轴"
+                       android:textColor="@color/black"/>
+
+               </TableRow>
+
+              <!-- <TableRow
+                   android:id="@+id/scheduleItem"
+
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_schedule" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:text="未来计划表"
+                       android:textColor="@color/black"/>
+
+               </TableRow>  -->
+
+           </TableLayout>
+
+       </android.support.v7.widget.CardView>
+
+
+       <View
+           android:layout_marginTop="8dp"
+           android:layout_width="match_parent"
+           android:layout_height="1px"
+           android:background="?android:attr/listDivider"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:textSize="22sp"
+           android:text="主题" />
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="6dp"
+           android:layout_margin="5dp"
+           android:elevation="15dp">
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:divider="@drawable/table_divide"
+               android:showDividers="middle|end">
+
+               <TableRow
+                   android:id="@+id/themeItem"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_theme" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:text="主题颜色"
+                       android:textColor="@color/black"/>
+
+               </TableRow>
+
+           </TableLayout>
+       </android.support.v7.widget.CardView>
+
+       <View
+           android:layout_marginTop="8dp"
+           android:layout_width="match_parent"
+           android:layout_height="1px"
+           android:background="?android:attr/listDivider"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:textSize="22sp"
+           android:text="更多设置"/>
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="6dp"
+           android:layout_margin="5dp"
+           android:elevation="15dp">
+
+
+           <TableLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:divider="@drawable/table_divide"
+               android:showDividers="middle|end">
+
+             <!--  <TableRow
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_student" />
+
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:text="学霸模式"
+                       android:textColor="@color/black"/>
+
+                   <Switch
+                       android:id="@+id/studyItem"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_gravity="center"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginRight="20dp"
+                       android:shadowColor="@color/blue"/>
+
+               </TableRow>  -->
+
+               <TableRow
+                   android:id="@+id/restItem"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_rest" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:text="自定义休息时间"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:textColor="@color/black"/>
+
+               </TableRow>
+
+               <TableRow
+                   android:id="@+id/hintItem"
+                   android:gravity="center_vertical"
+                   android:clickable="true"
+                   android:foreground="?android:attr/selectableItemBackground">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_hint" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginLeft="30dp"
+                       android:text="计时完成后提示音"
+                       android:textColor="@color/black"/>
+               </TableRow>
+
+               <TableRow
+                   android:gravity="center_vertical">
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:gravity="center_vertical"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:src="@drawable/ic_icon_phone" />
+                   <TextView
+                       android:textSize="21sp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:text="保持屏幕常亮"
+                       android:textColor="@color/black"/>
+
+                   <Switch
+                       android:id="@+id/screenItem"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:layout_gravity="center"
+                       android:layout_marginBottom="8dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_marginRight="20dp"
+                       android:shadowColor="@color/blue"/>
+               </TableRow>
+           </TableLayout>
+       </android.support.v7.widget.CardView>
+   </LinearLayout>
+
+</ScrollView>

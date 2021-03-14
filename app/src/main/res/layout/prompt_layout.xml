@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/blue">
+    <TextView
+        android:id="@+id/BacklogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/prompt_edit"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="编辑"
+            android:textSize="18sp"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/prompt_start"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="开始"
+            android:textSize="18sp"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/prompt_delete"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="删除"
+            android:textSize="18sp"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/prompt_linel"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入待办名称"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/prompt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置类型："
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/prompt_type"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置时间："
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/prompt_time"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分钟"
+                android:textColor="@color/white"/>
+
+            <View
+                android:id="@+id/prompt_chooseColor"
+                android:layout_marginLeft="30dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:background="@color/white"
+                android:clickable="true"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/prompt_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

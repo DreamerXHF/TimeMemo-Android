@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/swip_refresh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/blue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="累计数据"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/white"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="专注次数"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:text="专注时间"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/all_times"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="35sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+                                <TextView
+                                    android:id="@+id/all_timelength"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:textSize="35sp"
+                                    android:textColor="@color/white"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:textSize="10dp"
+                                    android:text="分钟"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/blue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="当日数据"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"/>
+
+                        <!--日期-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="8dp">
+                            <TextView
+                                android:id="@+id/Ddate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_gravity="center">
+                            <TextView
+                                android:text="专注次数"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:text="专注时间"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_gravity="center">
+                            <TextView
+                                android:id="@+id/day_times"
+                                android:text="3"
+                                android:textSize="35sp"
+                                android:textColor="@color/white"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+                                <TextView
+                                    android:id="@+id/day_timel"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="3"
+                                    android:textSize="35sp"
+                                    android:textColor="@color/white"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:textSize="10dp"
+                                    android:text="分钟"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/blue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="专注时间分布"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"/>
+
+                        <!--日期-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="8dp">
+                            <TextView
+                                android:id="@+id/Ddate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        />
+                    <!--日统计图-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/mPieChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardBackgroundColor="@color/blue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="类型分布"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/white"
+                        />
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/mPieChart_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/orange">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="立刻开始锁机"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/onem"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="1分钟"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/fivem"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="5分钟"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/tenm"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="10分钟"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/selftime"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="自定义"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锁定手机来进行自律"/>
+
+</LinearLayout>
